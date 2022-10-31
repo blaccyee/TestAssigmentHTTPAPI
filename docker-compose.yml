@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    container_name: app
+    network_mode: host
+    ports:
+      - "8888:8888"
+    command: bash -c "uvicorn app.main:app --proxy-headers --host localhost --port 8888"
+    env_file:
+      - .env
+    volumes:
+      - ./database.db:/app/database.db:delegated
+
