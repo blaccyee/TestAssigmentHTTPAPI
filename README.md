@@ -1,6 +1,6 @@
 # TestAssigmentHTTPAPI
  
-I'm really sorry, I didn't managed to create a proper docker-compose.yml file. I just stuck on connection error "This site can't be reached" when a container is running. 
+I'm really sorry, I didn't manage to create a proper docker-compose.yml file. I just stuck on connection error "This site can't be reached" when a container is running. 
 
 But it can be tested anyway!
 
