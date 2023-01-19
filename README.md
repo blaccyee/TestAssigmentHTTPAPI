@@ -1,15 +1,19 @@
 # TestAssigmentHTTPAPI
  
-I'm really sorry, I didn't manage to create a proper docker-compose.yml file. I just stuck on connection error "This site can't be reached" when a container is running. 
+This app was created to imitate a simple store API with possibility to create products with categories, and also to get lists of all products and all categories.
 
-But it can be tested anyway!
+### Docker run
+0) Open PyCharm (or something else) and clone this project. Run your Docker application
+1) In Terminal execute `docker build .`
+2) To run a server execute `docker-compose up`
+3) To reach API interface please follow this link -- http://localhost:8000/docs. This link will also be shown in Terminal
 
-### *Here is a little instruction*
+### Local run
 
-0) Open PyCharm (or something else)
-1) In Terminal execute 'pip install -e .'
-2) To run a server execute 'uvicorn app.main:app'
-3) Follow the link http://127.0.0.1:8000/docs (API documentation)
+0) Open PyCharm (or something else) and clone this project
+1) In Terminal execute `pip install -e .`
+2) To run a server execute `uvicorn app.main:app`
+3) Follow the link http://127.0.0.1:8000/docs (API interface)
 
 *If you've got different host and port just click it in your terminal and add '/docs' at the end of the address*
 ![image](https://user-images.githubusercontent.com/24205756/199099294-6bfef99f-d639-48d1-9c8f-30e58d4814b0.png)
